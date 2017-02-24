@@ -71,6 +71,7 @@ Clang-Tidy Checks
    misc-macro-repeated-side-effects
    misc-misplaced-const
    misc-misplaced-widening-cast
+   misc-misra-tidy
    misc-move-const-arg
    misc-move-constructor-init
    misc-move-forwarding-reference

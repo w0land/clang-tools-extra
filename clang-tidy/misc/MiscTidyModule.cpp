@@ -24,6 +24,7 @@
 #include "MacroRepeatedSideEffectsCheck.h"
 #include "MisplacedConstCheck.h"
 #include "MisplacedWideningCastCheck.h"
+#include "MisraTidyCheck.h"
 #include "MoveConstantArgumentCheck.h"
 #include "MoveConstructorInitCheck.h"
 #include "MoveForwardingReferenceCheck.h"
@@ -66,6 +67,8 @@ public:
     CheckFactories.registerCheck<AssertSideEffectCheck>(
         "misc-assert-side-effect");
     CheckFactories.registerCheck<MisplacedConstCheck>("misc-misplaced-const");
+    CheckFactories.registerCheck<MisraTidyCheck>(
+        "misc-misra-tidy");
     CheckFactories.registerCheck<UnconventionalAssignOperatorCheck>(
         "misc-unconventional-assign-operator");
     CheckFactories.registerCheck<BoolPointerImplicitConversionCheck>(
